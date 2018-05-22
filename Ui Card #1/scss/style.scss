@@ -1,0 +1,85 @@
+$background: #2f47c5;
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Lato , sans-serif;
+}
+
+.wrapper{
+	display: flex;
+	justify-content: center;
+	margin-top: 30px;
+}
+
+.card{
+	background: $background;
+	width: 250px;
+	height: 420px;
+	padding: 30px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-left: 10px;
+	margin-right: 10px;
+	
+	h3{
+		color: #fff;
+		text-transform: uppercase;
+		font-weight: normal;
+		letter-spacing: 3px;
+		font-size: 20px;
+		margin-top: 20px;
+		margin-bottom: 10px;
+	}
+	.line{
+		border-bottom: 1px solid #fff;
+		width: 30%;
+		margin-left: 40px;
+		margin-top: 20px;
+	}
+	
+	.price{
+		margin-top: 40px;
+		margin-bottom: 40px;
+		color: #fff;
+		font-size: 60px;
+		letter-spacing: 2px;
+		font-weight: normal;
+	}
+	
+	.content{
+		color: rgb(169,169,169);
+		text-transform: uppercase;
+		font-size: 12px;
+		line-height: 20px;
+	}
+	
+	.button{
+		margin-top: 50px;
+		margin-bottom: 20px;
+		text-transform: uppercase;
+		color: #fff;
+		font-size: 14px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		border: 1px solid rgb(169,169,169);
+		display: block;
+		width: calc(250px - 100px);
+		text-align: center;
+		cursor: pointer;
+		
+		&:hover{
+			color: $background;
+			border: 1px solid rgba($background, .3);
+			background: #fff;
+			font-weight: 700;
+			transition: all .5s;
+		}
+	}
+}
+
+.th{
+	margin-bottom: -20px;
+}

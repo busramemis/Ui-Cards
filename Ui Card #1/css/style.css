@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Lato , sans-serif;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.card {
+  background: #2f47c5;
+  width: 250px;
+  height: 420px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.card h3 {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: normal;
+  letter-spacing: 3px;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.card .line {
+  border-bottom: 1px solid #fff;
+  width: 30%;
+  margin-left: 40px;
+  margin-top: 20px;
+}
+.card .price {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  color: #fff;
+  font-size: 60px;
+  letter-spacing: 2px;
+  font-weight: normal;
+}
+.card .content {
+  color: darkgray;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 20px;
+}
+.card .button {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 14px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 1px solid darkgray;
+  display: block;
+  width: calc(250px - 100px);
+  text-align: center;
+  cursor: pointer;
+}
+.card .button:hover {
+  color: #2f47c5;
+  border: 1px solid rgba(47, 71, 197, 0.3);
+  background: #fff;
+  font-weight: 700;
+  transition: all .5s;
+}
+
+.th {
+  margin-bottom: -20px;
+}
