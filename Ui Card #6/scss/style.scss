@@ -1,0 +1,200 @@
+$radius: 10px;
+$main-color: #80d7ea;
+$head-color: #635f5e;
+$sec-color: #becfd9;
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	background: 
+		url('https://images.pexels.com/photos/374811/pexels-photo-374811.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940') no-repeat center center fixed;
+	background-size: cover; 
+}
+
+.container{
+	width: 100vw;
+	height: 100vh;
+	background: rgba(#80d7ea, .4);
+	position: relative;
+}
+
+.card{
+	width: 780px;
+	height: 500px;
+	margin: 0 auto;
+	padding-top: 20px;
+}
+
+.header{
+	background: 
+		url('https://images.pexels.com/photos/374811/pexels-photo-374811.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940') no-repeat center center;
+	background-size: 100%;
+	opacity: .8;
+	width: 100%;
+	height: 30%;
+	border-top-left-radius: $radius;
+	border-top-right-radius: $radius;
+	display: flex;
+	position: relative;
+	
+	.profile{
+		width: 110px;
+		height: 110px;
+		border: 7px solid #fff;
+		border-radius: 50%;
+		position: absolute;
+		bottom: -30%;
+		left: 5%;
+		cursor: pointer;
+	}
+	
+	.follow{
+		position: absolute;
+		right: 6%;
+		bottom: 10%;
+		border: none;
+		background: $main-color;
+		padding: 10px 20px;
+		border-radius: 5px;
+		color: #fff;
+		text-transform: uppercase;
+		font-weight: 700;
+		font-size: 14px;
+		cursor: pointer;
+		
+		&:hover{
+			background: rgba(#fff, .6);
+			color: rgba(#000, .6);;
+			transition: all .5s;
+		}
+	}
+	
+}
+
+.content{
+	background: #fff;
+	padding: 50px;
+	display: flex;
+	width: 100%;
+	border-bottom-left-radius: $radius;
+	border-bottom-right-radius: $radius;
+}
+
+.left{
+	width: 30%;
+	padding-right: 50px;
+	padding-top: 5px;
+	text-align: center;
+	h3{
+		color: $head-color;
+		font-size: 26px;
+		font-weight: normal;
+		margin-bottom: 3px;
+	}
+	span{
+		color: $sec-color;
+		font-size: 15px;
+	}
+	p{
+		border: .3px solid $sec-color;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	
+}
+.right{
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	width: 70%;
+	margin-top: -20px;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	
+	li{
+		display: flex;
+		list-style: none;
+	}
+	
+	.second{
+		width: 100%;
+		border: .5px solid $sec-color;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+	
+	.tweet{
+		font-size: 14px;
+		color: $head-color;
+		font-weight: 600;
+		margin-bottom: 7px;
+	}
+	
+	.reaction ul{
+		display: flex;
+		li{
+			font-size: 13px;
+			color: $sec-color;
+			margin-right: 25px;
+			font-weight: 700;
+			&:hover{
+				transition: .5s;
+				cursor: pointer;
+				color: #B00D10;
+			}
+			span{
+				padding-left: 3px;
+			}
+		}
+	}
+	
+	img{
+		width: 40px;
+		height: 40px;
+		margin-right: 10px;
+		border-radius: 5px;
+	}
+}
+
+.followers{
+	display: flex;
+	width: 100%;
+	padding-top: 10px;
+	&-number{
+		display: flex;
+		flex-direction: column;
+		width: 40%;
+		
+		.number{
+			font-size: 24px;
+		}
+		.text{
+			margin-top: 3px;
+			font-size: 14px;
+		}
+	}
+	&-images ul{
+		margin-left: 18px;
+		padding-top: 10px;
+		display: flex;
+		list-style: none;
+		width: 60%;		
+	}
+}
+
+.fimg{
+	width: 23x;
+	height: 23px;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+
+
+
+
+
