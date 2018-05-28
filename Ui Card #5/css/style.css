@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css?family=Titillium+Web:400,700,900");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.7);
+  width: 350px;
+  margin: 30px auto;
+  border-radius: 10px;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+}
+
+.header-photo {
+  background: url("https://images.pexels.com/photos/127513/pexels-photo-127513.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940") no-repeat;
+  background-size: cover;
+  height: 200px;
+  position: relative;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.header-photo:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(199, 102, 62, 0.4);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+  position: relative;
+  top: -50px;
+}
+.profile-picture img {
+  width: 100px;
+  height: 100px;
+  -webkit-clip-path: circle();
+          clip-path: circle();
+}
+.profile-content {
+  text-align: center;
+  margin: 10px;
+}
+.profile-content h3 {
+  color: #505050;
+  margin-bottom: 10px;
+}
+.profile-content p {
+  font-size: 14px;
+  color: rgba(80, 80, 80, 0.8);
+}
+.profile-contact {
+  margin: 20px;
+  display: flex;
+  list-style: none;
+}
+.profile-contact li {
+  margin-left: 30px;
+}
+.profile-contact li i {
+  color: #505050;
+  font-size: 1.2em;
+}
+.profile-contact li span {
+  margin-left: 5px;
+  color: rgba(80, 80, 80, 0.8);
+}
+.profile-follow {
+  display: flex;
+  list-style: none;
+  width: 100%;
+  justify-content: center;
+}
+.profile-follow li {
+  width: 50%;
+  height: 65px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-top: 1px solid rgba(80, 80, 80, 0.2);
+  border-left: 1px solid rgba(80, 80, 80, 0.2);
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.profile-follow li:first-child {
+  border-left: none;
+}
+.profile-follow li h4 {
+  color: #505050;
+  font-size: 17px;
+  cursor: pointer;
+}
+.profile-follow li span {
+  color: rgba(80, 80, 80, 0.7);
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.button {
+  width: 100%;
+  text-align: center;
+  background: #64bc7f;
+  color: #fff;
+  padding: 20px 0;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  font-weight: 700;
+  font-size: 18px;
+  margin-top: -50px;
+}
+.button:hover {
+  transition: all .5s;
+  background: #447f56;
+  cursor: pointer;
+}
