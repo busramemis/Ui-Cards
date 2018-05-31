@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css?family=Song+Myung|Sunflower:300,500,700");
+@import url("https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 650px;
+  overflow: hidden;
+  height: 420px;
+  display: flex;
+  border-radius: 5px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.9);
+  background: url("https://images.unsplash.com/photo-1520121270103-9b3adf3066e9?ixlib=rb-0.3.5&s=ed796f8eb5a5e1fad7fa71a1de8e8d4b&auto=format&fit=crop&w=500&q=60") no-repeat;
+}
+
+section {
+  width: 50%;
+  height: 100%;
+}
+
+#one {
+  position: relative;
+  top: 68%;
+  color: #fff;
+  left: 7%;
+}
+#one h1 {
+  font-size: 45px;
+  font-weight: 700;
+  font-family: 'Song Myung', serif;
+}
+#one .day {
+  font-family: 'Sunflower', sans-serif;
+  font-size: 18px;
+  font-style: italic;
+  margin-top: -30px;
+}
+
+#two {
+  background: #fff;
+  padding: 20px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.container {
+  font-family: 'Lora', serif;
+}
+.container h3 {
+  color: rgba(240, 81, 98, 0.8);
+  font-size: 24px;
+  font-style: italic;
+}
+.container h2 {
+  color: #f05162;
+  font-size: 30px;
+  font-style: italic;
+}
+.container .content {
+  font-size: 13px;
+  color: #888;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  line-height: 18px;
+  font-weight: 700;
+}
+.container .prop li {
+  display: flex;
+}
+.container .prop li i {
+  color: #f05162;
+  border: 2px solid #f05162;
+  width: 20px;
+  height: 20px;
+  padding: 7px;
+  text-align: center;
+}
+.container .prop li .option {
+  margin-left: 10px;
+  margin-bottom: 15px;
+}
+.container .prop li .option .up {
+  font-size: 12px;
+  padding-top: 3px;
+  color: rgba(136, 136, 136, 0.9);
+}
+.container .prop li .option .down {
+  font-size: 18px;
+  color: #888;
+  font-weight: 700;
+  font-style: italic;
+}
+.container .prop li .option .star {
+  display: flex;
+  cursor: pointer;
+  padding-bottom: -5px;
+}
+.container .prop li .option .star .fa-star {
+  border: none;
+  font-size: 12px;
+  padding: 0;
+  position: relative;
+  top: 5px;
+}
+
+ul {
+  list-style: none;
+}
+
+.pay {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.pay .price {
+  color: #555;
+  font-weight: 900;
+  font-size: 30px;
+}
+.pay button {
+  border: 3px solid #f05162;
+  background: #f05162;
+  color: #fff;
+  border-radius: 5px;
+  padding: 7px 15px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 700;
+  transition: .5s;
+}
+.pay button:hover {
+  background: #fff;
+  color: #f05162;
+  transition: .5s;
+}
