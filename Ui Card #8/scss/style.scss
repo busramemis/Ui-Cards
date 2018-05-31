@@ -1,0 +1,182 @@
+$background: #523448;
+$gray: #5B5B5B;
+$blue: #0a84e1;
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;	
+}
+
+body{
+	background: #fff;
+	font-family: 'Montserrat', sans-serif;
+}
+
+
+main{
+	width: 650px;
+	height: 420px;
+	display: flex;
+	overflow: hidden;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	box-shadow: 0 0 40px rgba(0,0,0,.7);
+	background: url("https://wallpaperstudio10.com/static/wpdb/wallpapers/3840x2160/170837.jpg") no-repeat;
+	background-size: cover;
+}
+
+#one{
+	width: 40%;
+	height: 100%;
+	
+}
+
+#two{
+	width: 60%;
+	height: 100%;
+	background: #fff;
+	display: flex;
+	clip-path: polygon(20% 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.container{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	margin-left: 90px;
+}
+
+.header{
+	list-style: none;
+	display: flex;
+	color: $gray;
+	margin-top: 50px;
+	.country{
+		font-size: 36px;
+	}
+	i{
+		margin-left: 30px;
+		margin-right: 30px;
+		padding-top: 13px;
+		transform: rotate(43deg);
+		font-size: 16px;
+	}
+	
+}
+
+.travel{
+	margin-top: 30px;
+	h3{
+		text-transform: uppercase;
+		color: rgba($gray, .5);
+		font-weight: 500;
+	}
+	p{
+		color: $gray;
+		font-weight: 500;
+		margin-top: 5px;
+		font-size: 20px;
+	}
+}
+
+.radio{
+	margin-top: 30px;
+	user-select: none;
+	padding-top:2px;
+	cursor: pointer;
+	padding-left: 30px;
+	text-transform: uppercase;
+	font-weight: 500;
+	color: $gray;
+	position: relative;
+	
+	&:hover .checkmark{
+		transition: .5s;
+		background: rgba($gray, .7);
+	}
+	input{
+		display: none;
+		&:checked ~ .checkmark:after{
+			content: "";
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			width: 13px;
+			height: 13px;
+			background: $blue;
+			border-radius: 50%;
+		}
+	}
+	.checkmark{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 20px;
+		height: 20px;
+		background: rgba($gray,.3);
+		border-radius: 50%;
+		transition: .5s;
+		&:after{
+			
+		}
+	}	
+}
+
+.choose{
+	margin-top: 30px;
+	font-size: 14px;
+	display: flex;
+	button{
+		background: $blue;
+		border: 3px solid $blue;
+		color: #fff;
+		padding: 7px 30px;
+		text-transform: uppercase;
+		font-weight: 500;
+		cursor: pointer;
+		transition: all .7s;
+		margin-left: 5px;
+		&:hover{
+			background: #fff;
+			color: $blue;
+			transition: all .7s;
+		}
+	}
+	
+	layer{position: relative;
+	}
+	select{
+		appearance: none;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		padding-left: 20px;
+		padding-right: 40px;
+		border: none;
+		color: $blue;
+		font-weight: 500;
+		text-transform: uppercase;
+		cursor: pointer;
+		position: relative;
+	}
+	
+	.select{
+		display: flex;
+		border: 2px solid $blue;
+		&:after{
+			content: '\f078';
+   	 	font: normal normal normal 17px/1 FontAwesome;
+   		color: $blue;
+   	  position: absolute;
+   	  pointer-events: none;
+			top: 50%;
+			right: 10%;
+			transform: translateY(-60%);
+		}
+	}
+}
